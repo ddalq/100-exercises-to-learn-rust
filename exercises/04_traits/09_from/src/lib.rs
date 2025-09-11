@@ -5,8 +5,8 @@ pub struct WrappingU32 {
 }
 
 impl From<u32> for WrappingU32 {
-    fn from(x: &u32) -> Self {
-	WrappingU32.new(value)
+    fn from(x: u32) -> Self {
+        WrappingU32 { value: x }
     }
 }
 
