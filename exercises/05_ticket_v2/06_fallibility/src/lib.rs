@@ -16,7 +16,7 @@ enum Status {
 }
 
 impl Ticket {
-    pub fn new(title: String, description: String, status: Status) -> Result<Ticket, String>{
+    pub fn new(title: String, description: String, status: Status) -> Result<Ticket, String> {
         if title.is_empty() {
             return Err("Title cannot be empty".to_string());
         }
@@ -34,7 +34,7 @@ impl Ticket {
             title,
             description,
             status,
-        }
+        })
     }
 }
 
